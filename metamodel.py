@@ -39,7 +39,7 @@ class MetadataMLP(nn.Module):
         return out
 
 if __name__ == "__main__":
-    batch_size = 4
+    batch_size = 8
     input_dim = 32
     model = MetadataMLP(input_dim=input_dim, hidden_dim=64, output_dim=2, dropout_p=0.1)
     sample_input = torch.randn(batch_size, input_dim)
