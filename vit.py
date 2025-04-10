@@ -10,7 +10,7 @@ def pair(t):
     return t if isinstance(t, tuple) else (t, t)
 
 # classes
-
+# Forward
 class FeedForward(nn.Module):
     def __init__(self, dim, hidden_dim, dropout = 0.):
         super().__init__()
